@@ -50,7 +50,11 @@ The 2015 paper "Keys under doormats" by leading security researchers concludes t
 
 ## Part 3 · Why the state wants access (pages 12–14)
 
-**13 · Encryption also hides crime.** To be fair to the other side: reports of child sexual abuse material to NCMEC, the US hotline most platforms report to, fell by 43 percent from 2023 to 2024. A large part of the drop followed Facebook Messenger's switch to end-to-end encryption. Investigators say they cannot act on crimes they cannot see.
+**13 · Encryption also hides crime.** To be fair to the other side. Most platforms report child abuse material to NCMEC, a US organisation, because Europe has no central body of its own. In 2023 NCMEC received 36.2 million reports, in 2024 20.5 million: 43 percent fewer. Two things explain the drop:
+- **Bundling:** one viral video shared thousands of times now counts as one report. Counted as incidents, the 2024 figure is 29.2 million, so about 7 million fewer than in 2023.
+- **Messenger's end-to-end encryption:** NCMEC calls this the most probable factor. Facebook reported about 6.9 million fewer reports after adjusting for bundling. This is NCMEC's own analysis, not an independent audit.
+
+Google, X, Discord and Microsoft also reported at least 20 percent less, which NCMEC cannot explain by encryption. The REPORT Act (2024) was meant to increase reporting, because it added child trafficking and online enticement to the offences platforms must report. Yet reports fell. The system is also fragile: US law requires platforms to report what they find, not to look for it, so scanning is voluntary.
 
 **14 · Targeted operations work.**
 - **EncroChat:** police hacked the network, which led to 6,558 arrests in Europe and about 900 million euros seized.
@@ -61,13 +65,15 @@ These cases show that investigators can reach encrypted communication without sc
 
 ## Part 4 · Case study: Chat Control (pages 15–20)
 
-**16 · Chat Control 1.0 and 2.0.**
-- **1.0:** since 2021, a temporary EU exception has allowed companies like Meta and Google to scan messages voluntarily. It expired in April 2026 and was renewed in July 2026 until 2028; encrypted chats are now excluded.
-- **2.0:** the permanent law proposed in 2022. Authorities could order a service to scan all users' messages, including encrypted ones, and a new EU Centre would forward reports to the police.
+**16 · Chat Control 1.0 and 2.0.** Chat Control started after the EU extended the ePrivacy Directive to messaging apps, which made the voluntary scanning that companies were already doing illegal.
+- **1.0 (2021):** a temporary EU exception lets tech companies, such as Google, Meta and Microsoft, scan messages voluntarily. It expired in April 2026, which left several months without a legal basis, and was renewed in July 2026 until 2028, now excluding encrypted chats. Say the last part out loud, because it is not on the slide.
+- **2.0 (2022):** a permanent law. Authorities could order a service to scan all its users' messages, including encrypted ones. A new EU Centre would handle reports in Europe instead of sending them to NCMEC in the US. Version 2.0 is only a proposal; it has not been adopted.
 
-In our matrix, version 2.0 belongs in the field "mass surveillance of content".
+**17 · Client-side scanning.** To scan encrypted chats, the check has to happen on the user's own device, before the message is encrypted. That is why it is called client-side scanning. Known images are compared with a list of fingerprints (perceptual hashes), and new material is assessed by AI, which makes more errors. If something is flagged, a report goes to the EU Centre and then to the police. The encryption stays technically intact, but its promise that no third party sees your message is gone. That is why researchers treat client-side scanning like a backdoor (Abelson et al., 2024).
 
-**17 · How it works.** Messages are checked on the phone before encryption. Known images are compared with a list of digital fingerprints, and new images and chats are assessed by AI, which makes more errors. If something is flagged, a report goes to the EU Centre and then to the police. The encryption itself is not broken, but the content has already been read. That is why researchers treat client-side scanning like a backdoor.
+This has been tried. In 2021 Apple announced NeuralHash: photos were compared on the iPhone with a list of known abuse images before upload to iCloud. Apple cancelled the project in 2022 and later explained that it would create new attack paths for data thieves. The lesson is about the architecture, not only about hacking: private encryption and scanning on the device exclude each other. Note that NeuralHash scanned photos, not chats.
+
+For your own knowledge: a perceptual hash is a fingerprint of how an image looks, not of its bytes, so resizing or compressing gives the same or a very similar hash, while a normal cryptographic hash changes completely. It can fail in both directions: different images can collide, and small deliberate edits can fool the detector.
 
 **18 · Status.**
 - **May 2022:** the Commission proposed mandatory scanning.
@@ -84,7 +90,14 @@ Already agreed: risk assessment for platforms, removal and blocking orders, and 
 - **Parliament:** wants only targeted orders against suspects.
 - **Signal and about 500 researchers:** reject scanning of private chats; Signal said it would rather leave the EU.
 
-**20 · False alarms.** In Germany about half of the roughly 180,000 reports in 2023 were not criminally relevant, often teenagers' own photos or memes. In Ireland, one in nine reports from 2020 was not abuse material, and the police kept the data anyway.
+**20 · False alarms.** Even if the technology worked, there is the problem of scale. A system that is 99.9 percent accurate, scanning a billion messages a day, still produces a million false alarms every day. The bar chart shows the share of reports to police that did not lead to a case. The measures differ slightly, so say so:
+- **Ireland (2020):** 471 of the reports from NCMEC, more than 11 percent, were not abuse material (ICCL figure confirmed by the Gardaí, via RTÉ).
+- **Germany (2023):** 89,336 of 180,287 reports were criminally relevant, so about half were not.
+- **Norway (2023):** 4,500 of 13,211 tips were taken on; the rest were rejected, mostly because the act is not a crime in Norway or is below the police threshold.
+- **Switzerland (2019):** fedpol said only about one tenth of the reports were criminally relevant. This is a single sentence quoted by Beobachter; the 90 percent is our calculation.
+- **Czechia (2024, light bar):** 888 of 22,553 reports were passed on for investigation. This is a different measure: not passed on is not the same as false.
+
+Sources: RTÉ and Irish Times (2022), netzpolitik.org (2024), Kripos (2024), Beobachter (2022), Czech Police.
 
 ## Part 5 · Weighing the dilemma (pages 21–25)
 
