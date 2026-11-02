@@ -1,0 +1,34 @@
+<!-- 10 BACKDOORS -->
+<section class="slide">
+  <p class="label">Why privacy matters</p>
+  <h2>Access built for the police can be used by others</h2>
+  <div class="rule"></div>
+  <div style="display:flex;gap:96px">
+    <div style="flex:1" class="top-line">
+      <p style="font-size:30px;font-weight:500" class="muted">Greece, 2004–05</p>
+      <p style="font-size:44px;font-weight:700;margin-top:12px">The Athens Affair</p>
+      <p class="small" style="margin-top:16px">Unknown attackers used the legal wiretap function in Vodafone Greece’s network to listen to about <b>100 phones</b>, including the Prime Minister’s.</p>
+      <svg width="700" height="120" viewBox="0 0 700 120" style="margin-top:28px" aria-label="About one hundred phones, one highlighted">
+        <g id="phones100"></g>
+      </svg>
+    </div>
+    <div style="flex:1" class="top-line">
+      <p style="font-size:30px;font-weight:500" class="muted">USA and worldwide, 2024–25</p>
+      <p style="font-size:44px;font-weight:700;margin-top:12px">Salt Typhoon</p>
+      <p class="small" style="margin-top:16px">Chinese state hackers got into US telecom networks, including systems used for court-ordered wiretaps. In 2025, 13 countries reported <b>200+ US organisations</b> affected.</p>
+      <p class="small" style="margin-top:16px">In Dec 2024 the FBI and CISA advised Americans to use <b>encrypted messengers</b>.</p>
+    </div>
+  </div>
+  <p class="lead" style="position:absolute;left:128px;bottom:176px;width:1664px">Security researchers conclude that a way in that works only for authorities cannot be built (Abelson et al., 2015).</p>
+  <p class="src" style="bottom:132px">Prevelakis &amp; Spinellis (2007), IEEE Spectrum; joint advisory of 13 countries (27 Aug 2025); Abelson et al. (2015), Keys under doormats</p>
+  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">10</p>
+</section>
+<script>
+(function () {
+  const T = window.T;
+  // ~100 phones (Athens Affair), first one = Prime Minister
+    let ph = '';
+    for (let i = 0; i < 100; i++) { const r = Math.floor(i / 25), c = i % 25; ph += T('rect', { x: c * 28, y: r * 30, width: 16, height: 24, rx: 3, fill: i === 0 ? '#FFF200' : '#211A52', stroke: '#211A52', 'stroke-width': 2 }); }
+    document.getElementById('phones100').innerHTML = ph;
+})();
+</script>

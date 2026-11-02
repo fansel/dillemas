@@ -1,0 +1,31 @@
+<script>
+// remember the current slide in the URL (#slide-N) and jump back to it on reload
+(function () {
+  const slides = Array.from(document.querySelectorAll('section.slide'));
+  slides.forEach((el, i) => { el.id = 'slide-' + (i + 1); });
+  const goTo = () => {
+    const m = /^#slide-(\d+)$/.exec(location.hash);
+    const el = m && slides[parseInt(m[1], 10) - 1];
+    if (el) el.scrollIntoView({ block: 'start', behavior: 'instant' });
+  };
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  goTo();
+  window.addEventListener('load', goTo);
+  let t;
+  window.addEventListener('scroll', () => {
+    clearTimeout(t);
+    t = setTimeout(() => {
+      const mid = window.innerHeight / 2;
+      let best = 0, bestDist = Infinity;
+      slides.forEach((el, i) => {
+        const r = el.getBoundingClientRect();
+        const d = Math.abs((r.top + r.bottom) / 2 - mid);
+        if (d < bestDist) { bestDist = d; best = i; }
+      });
+      history.replaceState(null, '', '#slide-' + (best + 1));
+    }, 120);
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>

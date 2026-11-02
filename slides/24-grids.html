@@ -1,0 +1,36 @@
+<!-- 24 GRIDS -->
+<section class="slide">
+  <p class="label">Framework</p>
+  <h2>Check everyone, or only suspects?</h2>
+  <div class="rule"></div>
+  <div style="display:flex;gap:120px">
+    <div style="flex:1">
+      <p style="font-size:36px;font-weight:700">Mass scanning</p>
+      <p class="lead muted">everyone is checked, all the time</p>
+      <svg id="gridA" width="720" height="340" viewBox="0 0 720 340" style="margin-top:28px" aria-label="Forty people, all checked"></svg>
+    </div>
+    <div style="flex:1">
+      <p style="font-size:36px;font-weight:700">Targeted</p>
+      <p class="lead muted">only suspects, with a judge’s order</p>
+      <svg id="gridB" width="720" height="340" viewBox="0 0 720 340" style="margin-top:28px" aria-label="Forty people, only three are checked"></svg>
+    </div>
+  </div>
+  <p class="lead" style="position:absolute;left:128px;bottom:150px;width:1664px">The European Parliament supports the targeted model, while most member states want wider options. The negotiations have not settled this yet.</p>
+  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">24</p>
+</section>
+<script>
+(function () {
+  const T = window.T;
+  // people grids
+    function grid(id, picked) {
+      let g = '';
+      for (let i = 0; i < 40; i++) {
+        const r = Math.floor(i / 10), c = i % 10, x = c * 72, y = r * 85, on = picked === 'all' || picked.includes(i);
+        g += `<use href="#person" x="${x + 14}" y="${y + 10}" width="44" height="62" fill="${on ? '#211A52' : '#D9D6EA'}"/>`;
+        if (on) g += `<circle cx="${x + 52}" cy="${y + 22}" r="13" fill="#FFF200" stroke="#211A52" stroke-width="4"/>`;
+      }
+      document.getElementById(id).innerHTML = g;
+    }
+    grid('gridA', 'all'); grid('gridB', [13, 26, 32]);
+})();
+</script>

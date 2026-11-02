@@ -1,0 +1,35 @@
+<!-- 4 HISTORY -->
+<section class="slide">
+  <p class="label">The dilemma</p>
+  <h2>The same conflict comes back with every new technology</h2>
+  <div class="rule"></div>
+  <svg id="hist" width="1664" height="560" viewBox="0 0 1664 560" aria-label="Timeline of surveillance debates from 1993 to 2025"></svg>
+  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">4</p>
+</section>
+<script>
+(function () {
+  const T = window.T;
+  // history timeline
+    const ev = [
+      ['1993', 'Clipper Chip: US plan', 'for keys held by the state'],
+      ['2006', 'EU data retention:', 'store everyone’s call data'],
+      ['2013', 'Snowden reveals NSA', 'mass surveillance'],
+      ['2014', 'EU court strikes down', 'data retention'],
+      ['2016', 'Apple refuses to unlock', 'an iPhone for the FBI'],
+      ['2020', 'Police hack the', 'EncroChat network'],
+      ['2022', 'EU Commission proposes', 'Chat Control 2.0'],
+      ['2025', 'UK order: Apple drops', 'encrypted backups'],
+    ];
+    let h = T('line', { x1: 20, y1: 280, x2: 1644, y2: 280, stroke: '#211A52', 'stroke-width': 8 });
+    ev.forEach((e, i) => {
+      const x = 60 + i * 212, up = i % 2 === 0, y0 = up ? 80 : 410;
+      h += T('line', { x1: x, y1: up ? 262 : 298, x2: x, y2: up ? 190 : 365, stroke: '#D9D6EA', 'stroke-width': 3 });
+      h += T('circle', { cx: x, cy: 280, r: e[0] === '2022' ? 22 : 16, fill: e[0] === '2022' ? '#FFF200' : '#211A52', stroke: '#211A52', 'stroke-width': 5 });
+      const last = i === ev.length - 1, tx = last ? 1660 : x - 20, an = last ? 'end' : 'start';
+      h += T('text', { x: tx, y: y0, 'text-anchor': an, 'font-size': 38, 'font-weight': 700, fill: '#211A52' }, e[0]);
+      h += T('text', { x: tx, y: y0 + 40, 'text-anchor': an, 'font-size': 26, fill: '#2B2B3A' }, e[1]);
+      h += T('text', { x: tx, y: y0 + 74, 'text-anchor': an, 'font-size': 26, fill: '#2B2B3A' }, e[2]);
+    });
+    document.getElementById('hist').innerHTML = h;
+})();
+</script>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Who May Read Our Messages? — Privacy vs. State Surveillance</title>
+<style>
+@font-face { font-family: "Barlow"; src: url(../fonts/Barlow-Regular.ttf); font-weight: 400; }
+@font-face { font-family: "Barlow"; src: url(../fonts/Barlow-Medium.ttf); font-weight: 500; }
+@font-face { font-family: "Barlow"; src: url(../fonts/Barlow-SemiBold.ttf); font-weight: 600; }
+@font-face { font-family: "Barlow"; src: url(../fonts/Barlow-Bold.ttf); font-weight: 700; }
+@font-face { font-family: "Barlow"; src: url(../fonts/Barlow-Italic.ttf); font-style: italic; }
+@page { size: 1920px 1080px; margin: 0; }
+:root { --blue: #211A52; --ink: #2B2B3A; --grey: #6B6B7E; --line: #D9D6EA; --tint: #EEEEF5; --lav: #B9B5D6; --hl: #FFF200; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { background: #444; }
+body { font-family: "Barlow", Arial, sans-serif; color: var(--blue); }
+.slide { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #fff; padding: 120px 128px 200px; margin: 0 auto 24px; break-after: page; }
+.label { position: absolute; left: 384px; bottom: 62px; font-size: 24px; font-weight: 500; color: var(--grey); }
+h2 { font-size: 64px; font-weight: 700; line-height: 1.1; }
+.rule { width: 120px; height: 5px; background: var(--blue); margin: 26px 0 44px; }
+.lead { font-size: 34px; line-height: 1.4; color: var(--ink); }
+.small { font-size: 28px; line-height: 1.4; color: var(--ink); }
+.muted { color: var(--grey); }
+.big { font-size: 96px; font-weight: 700; line-height: 1; }
+.src { position: absolute; left: 128px; bottom: 132px; width: 1664px; font-size: 22px; color: var(--grey); }
+.logo { position: absolute; left: 128px; bottom: 52px; height: 56px; }
+.page { position: absolute; right: 128px; bottom: 62px; font-size: 24px; font-weight: 600; }
+svg { font-family: "Barlow", Arial, sans-serif; display: block; }
+.mark { background: linear-gradient(transparent 58%, var(--hl) 58%); }
+.dark { background: var(--blue); color: #fff; }
+.sec { background: var(--blue); color: #fff; padding: 0; }
+.sec .wave { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .22; }
+.sec .num { position: absolute; left: 128px; top: 396px; font-size: 32px; font-weight: 500; color: var(--lav); }
+.sec h1 { position: absolute; left: 128px; top: 450px; font-size: 120px; font-weight: 700; line-height: 1.05; }
+.sec .sub { position: absolute; left: 128px; top: 600px; font-size: 40px; color: var(--lav); }
+.sec .wlogo { position: absolute; left: 128px; bottom: 64px; height: 56px; }
+.col { display: flex; flex-direction: column; }
+.top-line { border-top: 5px solid var(--blue); padding-top: 24px; }
+@media print { html, body { background: none; } .slide { margin: 0; } }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="person" viewBox="0 0 40 56"><circle cx="20" cy="12" r="10"/><path d="M2 56c0-14 8-24 18-24s18 10 18 24z"/></symbol>
+    <symbol id="phone" viewBox="0 0 60 100"><rect x="3" y="3" width="54" height="94" rx="10" fill="none" stroke="currentColor" stroke-width="5"/><rect x="22" y="9" width="16" height="4" rx="2" fill="currentColor"/></symbol>
+    <symbol id="lock" viewBox="0 0 60 70"><rect x="4" y="30" width="52" height="36" rx="6" fill="none" stroke="currentColor" stroke-width="5"/><path d="M15 30V20a15 15 0 0 1 30 0v10" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="30" cy="48" r="5" fill="currentColor"/></symbol>
+    <symbol id="server" viewBox="0 0 70 90"><rect x="3" y="3" width="64" height="24" rx="4" fill="none" stroke="currentColor" stroke-width="5"/><rect x="3" y="33" width="64" height="24" rx="4" fill="none" stroke="currentColor" stroke-width="5"/><rect x="3" y="63" width="64" height="24" rx="4" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="54" cy="15" r="4" fill="currentColor"/><circle cx="54" cy="45" r="4" fill="currentColor"/><circle cx="54" cy="75" r="4" fill="currentColor"/></symbol>
+    <symbol id="ear" viewBox="0 0 60 60"><circle cx="30" cy="30" r="27" fill="#FFF200" stroke="#211A52" stroke-width="4"/><circle cx="27" cy="27" r="10" fill="none" stroke="#211A52" stroke-width="5"/><path d="M34 34l10 10" stroke="#211A52" stroke-width="6" stroke-linecap="round"/></symbol>
+    <marker id="arr" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto"><path d="M1 1l10 5-10 5z" fill="#211A52"/></marker>
+    <marker id="arrg" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto"><path d="M1 1l10 5-10 5z" fill="#6B6B7E"/></marker>
+  </defs>
+</svg>
+
+<script>
+  window.T = (tag, attrs, text) => `<${tag} ${Object.entries(attrs).map(([k, v]) => `${k}="${v}"`).join(' ')}>${text ?? ''}</${tag}>`;
+</script>
+

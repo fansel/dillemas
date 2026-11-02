@@ -30,22 +30,23 @@ Facts as of 27 October 2026. Page numbers match the PDF.
 
 ## Part 2 · Why privacy matters (pages 7–11)
 
-**8 · "I've got nothing to hide".** This is the most common argument for surveillance. The legal scholar Daniel Solove (2007) shows three problems with it:
-- Small, harmless facts combined reveal health, beliefs and relationships.
-- Privacy is about who holds power over information, not only about hiding wrongdoing.
+**8 · "I've got nothing to hide".** This is the most common argument for surveillance. Daniel Solove (2007) and Bruce Schneier (2006) show three problems with it:
+- Small, harmless facts combined reveal health, beliefs and relationships. Schneier cites Cardinal Richelieu: give me six lines written by the most honest man and I will find enough to hang him.
+- Privacy is not secrecy. We put blinds on windows and a door on the bathroom without being criminals. Snowden: saying you have nothing to hide is like saying you do not care about free speech because you have nothing to say.
 - Rules change, so data that is harmless today can be used differently by a future government or in another country.
+
+If asked: Adam Moore (2011) adds that surveillance hits some groups harder, based on appearance, ethnicity, sexuality and religion. This links to Justice on slide 23.
 
 **9 · Chilling effect.** Jon Penney (2016) measured monthly views of 48 Wikipedia articles on terrorism-related topics. After the Snowden revelations in June 2013, views dropped by about 20 percent and kept falling. People avoided reading legal information because they felt watched. Surveillance changes the behaviour of people who have done nothing wrong.
 
 **10 · Access can be used by others.**
 - **Athens Affair (2004–05):** unknown attackers used the legal wiretap function in Vodafone Greece's network to listen to about 100 phones, including the Prime Minister's.
-- **Salt Typhoon (2024–25):** Chinese state hackers got into US telecom networks, including the systems for court-ordered wiretaps. In 2025, 13 countries reported more than 200 affected US organisations and targets in over 80 countries. In December 2024 the FBI and CISA advised Americans to use encrypted messengers.
+- **Salt Typhoon (2024–25):** Chinese state hackers got into US telecom networks, including the systems for court-ordered wiretaps. In 2025, 13 countries reported more than 200 affected US organisations. In December 2024 the FBI and CISA advised Americans to use encrypted messengers.
 
 The 2015 paper "Keys under doormats" by leading security researchers concludes that a way in that works only for authorities cannot be built.
 
 **11 · Function creep.** Spyware is sold to fight terrorism and serious crime, but journalists, activists and politicians keep appearing among the targets:
 - **Pegasus Project (2021):** a leaked list of about 50,000 phone numbers of possible targets.
-- **Paragon (2025):** WhatsApp warned about 90 users, including journalists in Italy.
 - **Germany (2025):** the Federal Constitutional Court ruled that state trojans may not be used for minor offences.
 
 ## Part 3 · Why the state wants access (pages 12–14)
@@ -101,28 +102,36 @@ Sources: RTÉ and Irish Times (2022), netzpolitik.org (2024), Kripos (2024), Beo
 
 ## Part 5 · Weighing the dilemma (pages 21–25)
 
-**22 · Framework.** We use the principlist framework by Formosa, Wilson and Richards (2021) from Lecture 2. Each principle becomes a question:
-- Does it do good?
-- Does it cause harm?
-- Does it respect freedom?
-- Is it fair?
-- Is it transparent?
+**22 · Framework.** We use the principlist framework for cybersecurity ethics by Formosa, Wilson and Richards (2021) from Lecture 2. The authors argue that applying the big ethical theories directly leads to conflicting results, because no theory has overwhelming authority. So they propose five mid-level principles for cybersecurity. Their definitions, in short:
+- **Beneficence:** technology should benefit people, promote well-being and make our lives better overall.
+- **Non-maleficence:** technology should not be used to intentionally harm people or to make our lives worse overall.
+- **Autonomy:** people should be able to make informed decisions for themselves about how technology is used in their lives.
+- **Justice:** technology should promote fairness, equality and impartiality, and should not unfairly discriminate, undermine solidarity or prevent equal access.
+- **Explicability:** technology should be intelligible, transparent and comprehensible, and it should be clear who is accountable.
 
-We apply the five questions to two approaches: scanning everyone, and targeted measures against suspects.
+Important: these principles can conflict with one another and need to be balanced in a context-sensitive manner, which can result in a range of ethical trade-offs (Formosa et al., p. 1). The framework does not rank them. We apply them to one case: Chat Control 2.0, the proposal to order services to scan private chats, including encrypted ones.
 
-**23 · Mass vs. targeted.** This is our group's assessment.
-- **Beneficence:** both approaches find offenders. Mass scanning probably finds more, so it is slightly ahead here.
-- **Non-maleficence:** mass scanning weakens security for everyone and flags innocent people.
-- **Autonomy:** mass scanning watches everyone and produces chilling effects.
-- **Justice:** mass scanning treats every user as a suspect.
-- **Explicability:** targeted measures do better, because a judge's order is required and documented.
+Our own method, not from the paper: for each principle we list what speaks for and against Chat Control, and our verdicts (open, not met) are our own scale. The principles overlap, so the same fact can matter under more than one of them. We try to use it under the principle where it fits best.
+
+**23 · Chat Control 2.0 through the five principles.** This is our group's assessment. Walk through the table row by row, first what speaks for the proposal, then what speaks against it:
+- **Beneficence (open):** it could find abuse material and offenders in encrypted chats, where reports have fallen. But the benefit is unproven: more reports do not show that more children are protected. Targeted operations catch offenders in other crime areas (organised crime, not child abuse).
+- **Non-maleficence (not met):** in favour: stopping the spread of abuse images could prevent further harm to victims. Against, documented: many false alarms, about half of German reports in 2023 were not criminally relevant. Careful: this figure comes from today's voluntary scanning, not from Chat Control 2.0. It shows how high the error rate is today, not how high it would be under Chat Control. Against, risk by analogy: a scanner on every phone is a new attack surface (analogies: Athens Affair, Salt Typhoon), and lists could be widened later (analogy: Pegasus). These are analogies for the misuse of surveillance functions, not proof for Chat Control. Hash matching produces fewer false alarms than AI classifiers (our assumption from the debate, not a source). Note on the definition: it says "intentionally", and the harm here is a side effect, not the aim, but the definition also says "make our lives worse overall".
+- **Autonomy (not met):** victims have a real interest in privacy and dignity, because images of their abuse spread without their consent. But there is no real choice: every message is scanned on your own phone before end-to-end encryption can protect it, and refusing means not communicating. The encryption stays technically intact, but it is bypassed. Your device is normally the place where nobody reads along.
+- **Justice (not met):** the question is whether benefits and burdens are distributed fairly. In favour: solidarity with victims, which the definition names explicitly, and the same rules apply formally to all users. Against: the benefit goes to a few, but the burden falls on all users, who are treated as suspects without cause.
+- **Explicability (not met):** in favour: one central EU Centre receives all reports, so there is a defined point of accountability. Against: hash lists and AI cannot be checked and the lists are secret, so the purpose could be widened unnoticed. Responsibility is split between providers, EU Centre and police, so it is not clear who is accountable.
+
+Result: the benefit is unclear, the false alarms are documented, and a milder means has not been ruled out for child abuse. It is a judgement, not a calculation.
+
+Honest gap: our evidence for targeted measures (EncroChat, ANOM, Sky ECC) concerns organised crime, not child abuse. Be ready for that question. Also, the NCMEC reports come from platforms scanning unencrypted content, so the German figure does not say what scanning encrypted chats would find.
 
 **24 · Check everyone, or only suspects?** The left grid shows mass scanning, where everyone is checked. The right grid shows the targeted model, where only a few suspects are checked with a court order. The European Parliament supports the targeted model, while most member states want wider options. The negotiations have not settled this yet.
 
 **25 · Conclusion.**
 1. The conflict is old; from the Clipper Chip to Chat Control, each new technology has raised the same question.
 2. Encryption moved the conflict onto our own devices.
-3. Measured with the five principles, targeted measures do better than scanning everyone, and the examples show they still catch criminals.
+3. Measured with the five principles, Chat Control 2.0 fails on harm, freedom, fairness and transparency, and its benefit is unproven. Targeted measures are the alternative, and the examples show they still catch criminals.
 4. Infrastructure built for surveillance stays available to future governments and to attackers.
+
+Closing line (Schneier): the choice is not security versus privacy, but liberty versus control.
 
 **26 · References.** **27 · Thank you.**
