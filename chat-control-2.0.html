@@ -66,7 +66,7 @@ svg { font-family: "Barlow", Arial, sans-serif; display: block; }
     <h1 style="font-size:116px;font-weight:700;line-height:1.02">Who may read our messages?</h1>
     <p style="font-size:42px;line-height:1.3;margin-top:36px">Privacy vs. state surveillance of communication — with Chat Control as a case study</p>
   </div>
-  <p style="position:absolute;left:128px;bottom:96px;font-size:30px;line-height:1.45"><b>[Group members]</b><br><span style="color:var(--lav)">Dilemmas in Cyber Security E26 · Aalborg University Copenhagen</span></p>
+  <p style="position:absolute;left:128px;bottom:96px;font-size:30px;line-height:1.45"><b>Felix Mansel, Marika Wach and Julia Przeździk</b><br><span style="color:var(--lav)">Dilemmas in Cyber Security E26 – Aalborg University Copenhagen</span></p>
 </section>
 
 <!-- 2 HOOK -->
@@ -76,7 +76,6 @@ svg { font-family: "Barlow", Arial, sans-serif; display: block; }
     <div style="flex:1">
       <h2 style="font-size:80px">Who should be able to read your messages?</h2>
       <p class="lead" style="margin-top:48px">Most people would say: me, the person I write to, and in some cases the police with a court order.</p>
-      <p class="lead" style="margin-top:28px">Where that line is drawn has been argued about for more than 30 years.</p>
     </div>
     <svg width="560" height="640" viewBox="0 0 560 640" aria-label="A phone whose chat messages are being inspected by a magnifying glass">
       <rect x="110" y="20" width="300" height="600" rx="44" fill="none" stroke="#211A52" stroke-width="8"/>
@@ -124,79 +123,234 @@ svg { font-family: "Barlow", Arial, sans-serif; display: block; }
   <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">3</p>
 </section>
 
-<!-- 4 HISTORY -->
+<!-- 4 FOR WHOM -->
 <section class="slide">
   <p class="label">The dilemma</p>
-  <h2>The same conflict comes back with every new technology</h2>
+  <h2>Who faces the dilemma?</h2>
   <div class="rule"></div>
-  <svg id="hist" width="1664" height="560" viewBox="0 0 1664 560" aria-label="Timeline of surveillance debates from 1993 to 2025"></svg>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:64px;margin-top:20px">
+    <div class="top-line">
+      <svg width="140" height="90" viewBox="0 0 140 90" aria-label="A building with columns"><path d="M10 30L70 6l60 24z" fill="#211A52"/><path d="M24 40v34M52 40v34M80 40v34M108 40v34" stroke="#211A52" stroke-width="9"/><path d="M10 80h120" stroke="#211A52" stroke-width="8"/></svg>
+      <p style="font-size:44px;font-weight:700;margin-top:24px">EU and member states</p>
+      <p style="font-size:30px;font-weight:500;margin-top:6px" class="muted">Decide</p>
+      <p class="small" style="margin-top:20px">Protect children, or protect private communication?</p>
+    </div>
+    <div class="top-line">
+      <svg width="140" height="90" viewBox="0 0 140 90" aria-label="A server"><use href="#server" x="30" y="0" width="64" height="86" color="#211A52"/></svg>
+      <p style="font-size:44px;font-weight:700;margin-top:24px">Providers</p>
+      <p style="font-size:30px;font-weight:500;margin-top:6px" class="muted">Must act</p>
+      <p class="small" style="margin-top:20px">Scan messages and weaken trust in encryption, or refuse and risk leaving the EU, as Signal says it would.</p>
+    </div>
+    <div class="top-line">
+      <svg width="140" height="90" viewBox="0 0 140 90" aria-label="People"><use href="#person" x="10" y="22" width="32" height="46" fill="#211A52"/><use href="#person" x="52" y="10" width="40" height="58" fill="#211A52"/><use href="#person" x="102" y="28" width="26" height="38" fill="#B9B5D6"/></svg>
+      <p style="font-size:44px;font-weight:700;margin-top:24px">Users</p>
+      <p style="font-size:30px;font-weight:500;margin-top:6px" class="muted">Carry the consequences</p>
+      <p class="small" style="margin-top:20px">Parents want children protected and their chats private.</p>
+    </div>
+  </div>
   <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">4</p>
+</section>
+
+<!-- 5 SECTION: privacy -->
+<section class="slide sec">
+  <img class="wave" src="img/wave_white_16x9.png" alt="">
+  <p class="num">Part 2</p>
+  <h1>Why privacy matters</h1>
+  <p class="sub">Arguments against more surveillance</p>
+  <img class="wlogo" src="img/CPH_LEFT_WHITE.png" alt="AAU Copenhagen">
+</section>
+
+<!-- 6 NOTHING TO HIDE -->
+<section class="slide">
+  <p class="label">Why privacy matters</p>
+  <h2>“I’ve got nothing to hide”</h2>
+  <p class="lead muted" style="margin-top:12px">The most common argument for surveillance, and three problems with it (Solove, 2007; Schneier, 2006)</p>
+  <div class="rule"></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:64px">
+    <div class="top-line">
+      <svg width="140" height="90" viewBox="0 0 140 90" aria-label="Scattered data points combining into a profile"><circle cx="15" cy="20" r="9" fill="#B9B5D6"/><circle cx="45" cy="70" r="9" fill="#B9B5D6"/><circle cx="25" cy="50" r="9" fill="#B9B5D6"/><circle cx="55" cy="25" r="9" fill="#B9B5D6"/><path d="M72 45h24" stroke="#211A52" stroke-width="5" marker-end="url(#arr)"/><use href="#person" x="106" y="22" width="30" height="42" fill="#211A52"/></svg>
+      <p style="font-size:36px;font-weight:700;margin-top:24px">Small facts add up</p>
+      <p class="small" style="margin-top:12px">Harmless data points, combined, show health, beliefs, relationships and routines. “Give me six lines by the most honest man, and I’ll find enough to hang him.” (Richelieu)</p>
+    </div>
+    <div class="top-line">
+      <svg width="140" height="90" viewBox="0 0 140 90" aria-label="A window with blinds"><rect x="40" y="6" width="60" height="78" fill="none" stroke="#211A52" stroke-width="5"/><path d="M40 28h60M40 48h60M40 68h60" stroke="#211A52" stroke-width="5"/></svg>
+      <p style="font-size:36px;font-weight:700;margin-top:24px">Privacy is not secrecy</p>
+      <p class="small" style="margin-top:12px">We have blinds on our windows and a door on the bathroom without being criminals. “No different than saying you don’t care about free speech because you have nothing to say.” (Snowden)</p>
+    </div>
+    <div class="top-line">
+      <svg width="140" height="90" viewBox="0 0 140 90" aria-label="A clock"><circle cx="45" cy="45" r="38" fill="none" stroke="#211A52" stroke-width="5"/><path d="M45 22v24l16 10" stroke="#211A52" stroke-width="5" fill="none" stroke-linecap="round"/></svg>
+      <p style="font-size:36px;font-weight:700;margin-top:24px">Rules change</p>
+      <p class="small" style="margin-top:12px">What is harmless today can become a problem under a future government or in another country.</p>
+    </div>
+  </div>
+  <p class="src">Solove, D. J. (2007). “I’ve Got Nothing to Hide” and Other Misunderstandings of Privacy. San Diego Law Review, 44, 745. Schneier, B. (2006). The Eternal Value of Privacy. Snowden: Reddit AMA (2015).</p>
+  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">6</p>
+</section>
+
+<!-- 7 CHILLING EFFECT -->
+<section class="slide">
+  <p class="label">Why privacy matters</p>
+  <h2>People change their behaviour when they feel watched</h2>
+  <div class="rule"></div>
+  <div style="display:flex;gap:80px;align-items:start">
+    <svg id="penney" width="1100" height="520" viewBox="0 0 1100 520" aria-label="Line chart: monthly views of 48 terrorism-related Wikipedia articles fall by about 20 percent after the Snowden revelations in June 2013"></svg>
+    <div style="flex:1">
+      <p class="big">−20%</p>
+      <p class="lead" style="margin-top:20px">monthly views of 48 Wikipedia articles on terrorism-related topics after the Snowden revelations in June 2013.</p>
+      <p class="lead" style="margin-top:24px">Views kept falling in the following months. Researchers call this a <b>chilling effect</b>.</p>
+    </div>
+  </div>
+  <p class="src">Penney, J. (2016). Chilling Effects: Online Surveillance and Wikipedia Use. Berkeley Technology Law Journal, 31, 117. Chart simplified.</p>
+  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">7</p>
 </section>
 <script>
 (function () {
   const T = window.T;
-  // history timeline
-    const ev = [
-      ['1993', 'Clipper Chip: US plan', 'for keys held by the state'],
-      ['2006', 'EU data retention:', 'store everyone’s call data'],
-      ['2013', 'Snowden reveals NSA', 'mass surveillance'],
-      ['2014', 'EU court strikes down', 'data retention'],
-      ['2016', 'Apple refuses to unlock', 'an iPhone for the FBI'],
-      ['2020', 'Police hack the', 'EncroChat network'],
-      ['2022', 'EU Commission proposes', 'Chat Control 2.0'],
-      ['2025', 'UK order: Apple drops', 'encrypted backups'],
-    ];
-    let h = T('line', { x1: 20, y1: 280, x2: 1644, y2: 280, stroke: '#211A52', 'stroke-width': 8 });
-    ev.forEach((e, i) => {
-      const x = 60 + i * 212, up = i % 2 === 0, y0 = up ? 80 : 410;
-      h += T('line', { x1: x, y1: up ? 262 : 298, x2: x, y2: up ? 190 : 365, stroke: '#D9D6EA', 'stroke-width': 3 });
-      h += T('circle', { cx: x, cy: 280, r: e[0] === '2022' ? 22 : 16, fill: e[0] === '2022' ? '#FFF200' : '#211A52', stroke: '#211A52', 'stroke-width': 5 });
-      const last = i === ev.length - 1, tx = last ? 1660 : x - 20, an = last ? 'end' : 'start';
-      h += T('text', { x: tx, y: y0, 'text-anchor': an, 'font-size': 38, 'font-weight': 700, fill: '#211A52' }, e[0]);
-      h += T('text', { x: tx, y: y0 + 40, 'text-anchor': an, 'font-size': 26, fill: '#2B2B3A' }, e[1]);
-      h += T('text', { x: tx, y: y0 + 74, 'text-anchor': an, 'font-size': 26, fill: '#2B2B3A' }, e[2]);
-    });
-    document.getElementById('hist').innerHTML = h;
+  // simplified Penney chart
+    const before = [2.9,3.0,2.95,3.05,3.0,2.9,3.1,3.0,2.95,3.05,3.1,3.0,2.95,3.05,3.0,3.1,3.0];
+    const after = [2.3,2.25,2.2,2.25,2.15,2.2,2.1,2.15,2.05,2.1,2.0,2.05,1.95,2.0,1.95];
+    const X = i => 90 + i * 32.5, Y = v => 440 - v * 120;
+    let p = '';
+    [1, 2, 3].forEach(v => { p += T('line', { x1: 90, y1: Y(v), x2: 1090, y2: Y(v), stroke: '#EEEEF5', 'stroke-width': 2 }); p += T('text', { x: 72, y: Y(v) + 9, 'text-anchor': 'end', 'font-size': 26, fill: '#6B6B7E' }, v + 'M'); });
+    p += T('line', { x1: 90, y1: 440, x2: 1090, y2: 440, stroke: '#211A52', 'stroke-width': 3 });
+    p += T('line', { x1: X(16.5), y1: 60, x2: X(16.5), y2: 440, stroke: '#6B6B7E', 'stroke-width': 3, 'stroke-dasharray': '8 8' });
+    p += T('text', { x: X(16.5) + 14, y: 80, 'font-size': 26, fill: '#6B6B7E' }, 'June 2013: Snowden revelations');
+    p += T('polyline', { points: before.map((v, i) => `${X(i)},${Y(v)}`).join(' '), fill: 'none', stroke: '#211A52', 'stroke-width': 6 });
+    p += T('polyline', { points: after.map((v, i) => `${X(i + 17)},${Y(v)}`).join(' '), fill: 'none', stroke: '#211A52', 'stroke-width': 6 });
+    p += T('text', { x: X(0), y: 488, 'font-size': 26, fill: '#2B2B3A' }, '2012') + T('text', { x: X(12), y: 488, 'font-size': 26, fill: '#2B2B3A' }, '2013') + T('text', { x: X(24), y: 488, 'font-size': 26, fill: '#2B2B3A' }, '2014');
+    p += T('text', { x: 90, y: 24, 'font-size': 26, 'font-weight': 700, fill: '#211A52' }, 'Monthly views of the 48 articles');
+    document.getElementById('penney').innerHTML = p;
 })();
 </script>
 
-<!-- 5 TAXONOMY -->
+<!-- 8 BACKDOORS -->
 <section class="slide">
-  <p class="label">The dilemma</p>
-  <h2>Four ways the state can listen</h2>
-  <div class="rule" style="margin-bottom:24px"></div>
-  <svg width="1664" height="640" viewBox="0 0 1664 640" aria-label="Two-by-two matrix: targeted or mass surveillance, of content or metadata">
-    <text x="110" y="30" font-size="28" font-weight="700" fill="#6B6B7E">Targeted: one suspect</text>
-    <text x="1650" y="30" text-anchor="end" font-size="28" font-weight="700" fill="#6B6B7E">Mass: everyone</text>
-    <text x="40" y="200" font-size="28" font-weight="700" fill="#6B6B7E" transform="rotate(-90 40 200)" text-anchor="middle">Content</text>
-    <text x="40" y="490" font-size="28" font-weight="700" fill="#6B6B7E" transform="rotate(-90 40 490)" text-anchor="middle">Metadata</text>
-    <line x1="80" y1="345" x2="1650" y2="345" stroke="#211A52" stroke-width="4"/>
-    <line x1="865" y1="55" x2="865" y2="635" stroke="#211A52" stroke-width="4"/>
-    <g font-size="30" fill="#2B2B3A">
-      <text x="110" y="110" font-size="38" font-weight="700" fill="#211A52">Wiretap, state trojan, spyware</text>
-      <text x="110" y="160">What a suspect says or writes.</text>
-      <text x="110" y="200">Germany 2024: 16,868 wiretap orders.</text>
-      <text x="110" y="240" fill="#6B6B7E">Needs a judge’s order.</text>
-      <text x="110" y="410" font-size="38" font-weight="700" fill="#211A52">Call records of a suspect</text>
-      <text x="110" y="460">Who, when, where — for one person.</text>
-      <text x="110" y="500" fill="#6B6B7E">e.g. “quick freeze” of data</text>
-      <text x="110" y="540" fill="#6B6B7E">after a crime.</text>
-      <text x="900" y="410" font-size="38" font-weight="700" fill="#211A52">Data retention</text>
-      <text x="900" y="460">Everyone’s connection data is stored</text>
-      <text x="900" y="500">in advance. EU law struck down 2014;</text>
-      <text x="900" y="540" fill="#6B6B7E">Germany debates IP storage (2026).</text>
-      <text x="900" y="110" font-size="38" font-weight="700" fill="#211A52">Bulk interception, scanning</text>
-      <text x="900" y="160">Everyone’s content is searched.</text>
-      <text x="900" y="200">NSA programmes (Snowden, 2013);</text>
-      <text x="900" y="240"><tspan font-weight="700">Chat Control 2.0</tspan> (proposed 2022).</text>
+  <p class="label">Why privacy matters</p>
+  <h2>Access built for the police can be used by others</h2>
+  <div class="rule"></div>
+  <div style="display:flex;gap:96px">
+    <div style="flex:1" class="top-line">
+      <p style="font-size:30px;font-weight:500" class="muted">Greece, 2004–05</p>
+      <p style="font-size:44px;font-weight:700;margin-top:12px">The Athens Affair</p>
+      <p class="small" style="margin-top:16px">Unknown attackers used the legal wiretap function in Vodafone Greece’s network to listen to about <b>100 phones</b>, including the Prime Minister’s.</p>
+      <svg width="700" height="120" viewBox="0 0 700 120" style="margin-top:28px" aria-label="About one hundred phones, one highlighted">
+        <g id="phones100"></g>
+      </svg>
+    </div>
+    <div style="flex:1" class="top-line">
+      <p style="font-size:30px;font-weight:500" class="muted">USA and worldwide, 2024–25</p>
+      <p style="font-size:44px;font-weight:700;margin-top:12px">Salt Typhoon</p>
+      <p class="small" style="margin-top:16px">Chinese state hackers got into US telecom networks, including systems used for court-ordered wiretaps. In 2025, 13 countries reported <b>200+ US organisations</b> affected.</p>
+      <p class="small" style="margin-top:16px">In Dec 2024 the FBI and CISA advised Americans to use <b>encrypted messengers</b>.</p>
+    </div>
+  </div>
+  <p class="lead" style="position:absolute;left:128px;bottom:176px;width:1664px">Security researchers conclude that a way in that works only for authorities cannot be built (Abelson et al., 2015).</p>
+  <p class="src" style="bottom:132px">Prevelakis &amp; Spinellis (2007), IEEE Spectrum; joint advisory of 13 countries (27 Aug 2025); Abelson et al. (2015), Keys under doormats</p>
+  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">8</p>
+</section>
+<script>
+(function () {
+  const T = window.T;
+  // ~100 phones (Athens Affair), first one = Prime Minister
+    let ph = '';
+    for (let i = 0; i < 100; i++) { const r = Math.floor(i / 25), c = i % 25; ph += T('rect', { x: c * 28, y: r * 30, width: 16, height: 24, rx: 3, fill: i === 0 ? '#FFF200' : '#211A52', stroke: '#211A52', 'stroke-width': 2 }); }
+    document.getElementById('phones100').innerHTML = ph;
+})();
+</script>
+
+<!-- 9 FUNCTION CREEP -->
+<section class="slide">
+  <p class="label">Why privacy matters</p>
+  <h2>Surveillance tools spread beyond their original purpose</h2>
+  <div class="rule"></div>
+  <svg width="1664" height="260" viewBox="0 0 1664 260" aria-label="Arrow from official targets of spyware to journalists, activists and politicians">
+    <path d="M40 130h1580" stroke="#211A52" stroke-width="6" marker-end="url(#arr)"/>
+    <g font-size="30" fill="#2B2B3A" text-anchor="middle">
+      <circle cx="200" cy="130" r="20" fill="#211A52"/><text x="200" y="80" font-weight="700" fill="#211A52">Terrorists</text><text x="200" y="195" fill="#6B6B7E">official purpose</text>
+      <circle cx="600" cy="130" r="20" fill="#211A52"/><text x="600" y="80" font-weight="700" fill="#211A52">Serious crime</text><text x="600" y="195" fill="#6B6B7E">official purpose</text>
+      <circle cx="1000" cy="130" r="20" fill="#FFF200" stroke="#211A52" stroke-width="4"/><text x="1000" y="80" font-weight="700" fill="#211A52">Journalists</text><text x="1000" y="195" fill="#6B6B7E">found among targets</text>
+      <circle cx="1400" cy="130" r="20" fill="#FFF200" stroke="#211A52" stroke-width="4"/><text x="1400" y="80" font-weight="700" fill="#211A52">Activists, politicians</text><text x="1400" y="195" fill="#6B6B7E">found among targets</text>
     </g>
   </svg>
-  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">5</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:20px">
+    <div class="top-line"><p class="big" style="font-size:72px">50,000</p><p class="small" style="margin-top:12px">phone numbers on a leaked list of possible <b>Pegasus</b> spyware targets (2021)</p></div>
+    <div class="top-line"><p class="big" style="font-size:72px">2025</p><p class="small" style="margin-top:12px">German Constitutional Court bans state trojans for <b>minor offences</b></p></div>
+  </div>
+  <p class="src">Pegasus Project (Forbidden Stories / Amnesty, 2021); BVerfG 1 BvR 180/23 (2025)</p>
+  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">9</p>
 </section>
 
-<!-- 6 GOING DARK -->
+<!-- 10 SECTION: state -->
+<section class="slide sec">
+  <img class="wave" src="img/wave_white_16x9.png" alt="">
+  <p class="num">Part 3</p>
+  <h1>Why the state wants access</h1>
+  <p class="sub">Arguments for more surveillance</p>
+  <img class="wlogo" src="img/CPH_LEFT_WHITE.png" alt="AAU Copenhagen">
+</section>
+
+<!-- 11 ENCRYPTION HIDES CRIME -->
 <section class="slide">
-  <p class="label">The dilemma</p>
+  <p class="label">Why the state wants access</p>
+  <h2>Encryption also hides serious crime</h2>
+  <div class="rule"></div>
+  <div style="display:flex;gap:96px;align-items:end">
+    <svg width="900" height="560" viewBox="0 0 900 560" aria-label="Bar chart: reports of child abuse material to NCMEC fell from 36.2 million in 2023 to 20.5 million in 2024 and 21.3 million in 2025">
+      <line x1="40" y1="500" x2="880" y2="500" stroke="#211A52" stroke-width="4"/>
+      <rect x="90" y="100" width="200" height="400" fill="#211A52"/>
+      <rect x="360" y="274" width="200" height="226" fill="#B9B5D6"/>
+      <rect x="630" y="265" width="200" height="235" fill="#B9B5D6"/>
+      <g text-anchor="middle">
+        <text x="190" y="80" font-size="48" font-weight="700" fill="#211A52">36.2M</text>
+        <text x="460" y="254" font-size="48" font-weight="700" fill="#211A52">20.5M</text>
+        <text x="730" y="245" font-size="48" font-weight="700" fill="#211A52">21.3M</text>
+        <text x="190" y="544" font-size="32" font-weight="600" fill="#2B2B3A">2023</text>
+        <text x="460" y="544" font-size="32" font-weight="600" fill="#2B2B3A">2024</text>
+        <text x="730" y="544" font-size="32" font-weight="600" fill="#2B2B3A">2025</text>
+      </g>
+    </svg>
+    <div style="flex:1;padding-bottom:40px">
+      <p class="big" style="font-size:120px">−43%</p>
+      <p class="lead" style="margin-top:24px">fewer reports of child abuse material due to:</p>
+      <ul class="lead" style="margin:12px 0 0 40px">
+        <li>bundling</li>
+        <li>Messenger's end-to-end encryption</li>
+      </ul>
+      <p class="small" style="margin-top:32px;color:var(--grey)">The REPORT Act (2024) was meant to increase reporting: platforms must now also report child trafficking and online enticement.</p>
+    </div>
+  </div>
+  <p class="src">Reports to NCMEC, the US hotline most platforms report to (CyberTipline data 2023–2025; NBC News, 2025)</p>
+  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">11</p>
+</section>
+
+<!-- 12 TARGETED OPERATIONS -->
+<section class="slide">
+  <p class="label">Why the state wants access</p>
+  <h2>Targeted operations against encrypted networks</h2>
+  <p class="lead muted" style="margin-top:12px">Police hacked or secretly ran encrypted phone services used mainly by criminals</p>
+  <div class="rule"></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:64px">
+    <div class="top-line"><p style="font-size:30px;font-weight:500" class="muted">EncroChat, 2020</p><p class="big" style="margin-top:16px">6,558</p><p class="small" style="margin-top:12px">arrests across Europe, about €900M seized. Around 60,000 users.</p></div>
+    <div class="top-line"><p style="font-size:30px;font-weight:500" class="muted">ANOM, 2021</p><p class="big" style="margin-top:16px">800+</p><p class="small" style="margin-top:12px">arrests in 16 countries. The FBI secretly ran the app on 12,000 devices.</p></div>
+    <div class="top-line"><p style="font-size:30px;font-weight:500" class="muted">Sky ECC, 2021</p><p class="big" style="margin-top:16px">585</p><p class="small" style="margin-top:12px">arrest warrants in Germany alone (until 2025). About 70,000 users monitored.</p></div>
+  </div>
+  <p class="lead" style="position:absolute;left:128px;bottom:176px;width:1664px">Investigators reached encrypted communication without scanning everyone, but against organised crime, not child abuse. Courts still debate how such evidence may be used (CJEU, C-670/22, 2024).</p>
+  <p class="src" style="bottom:132px">Europol / Eurojust (2023); FBI &amp; Australian Federal Police (2021); BKA (2025)</p>
+  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">12</p>
+</section>
+
+<!-- 13 SECTION: case -->
+<section class="slide sec">
+  <img class="wave" src="img/wave_white_16x9.png" alt="">
+  <p class="num">Part 4</p>
+  <h1>Case study: Chat Control</h1>
+  <p class="sub">The EU plan to scan private chats for child abuse material</p>
+  <img class="wlogo" src="img/CPH_LEFT_WHITE.png" alt="AAU Copenhagen">
+</section>
+
+<!-- 14 GOING DARK -->
+<section class="slide">
+  <p class="label">Case study</p>
   <h2>Encryption moved the point of access to our phones</h2>
   <div class="rule"></div>
   <svg width="1664" height="560" viewBox="0 -10 1664 570" aria-label="Before: messages readable at the provider. With end-to-end encryption: only readable on the phones, so the state targets the devices">
@@ -229,207 +383,10 @@ svg { font-family: "Barlow", Arial, sans-serif; display: block; }
       <text x="1120" y="470"><tspan font-weight="700" fill="#211A52">3 · Weaken encryption</tspan></text><text x="1120" y="510">backdoors (UK vs. Apple, 2025)</text>
     </g>
   </svg>
-  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">6</p>
-</section>
-
-<!-- 7 SECTION: privacy -->
-<section class="slide sec">
-  <img class="wave" src="img/wave_white_16x9.png" alt="">
-  <p class="num">Part 2</p>
-  <h1>Why privacy matters</h1>
-  <p class="sub">Arguments against more surveillance</p>
-  <img class="wlogo" src="img/CPH_LEFT_WHITE.png" alt="AAU Copenhagen">
-</section>
-
-<!-- 8 NOTHING TO HIDE -->
-<section class="slide">
-  <p class="label">Why privacy matters</p>
-  <h2>“I’ve got nothing to hide”</h2>
-  <p class="lead muted" style="margin-top:12px">The most common argument for surveillance, and three problems with it (Solove, 2007; Schneier, 2006)</p>
-  <div class="rule"></div>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:64px">
-    <div class="top-line">
-      <svg width="140" height="90" viewBox="0 0 140 90" aria-label="Scattered data points combining into a profile"><circle cx="15" cy="20" r="9" fill="#B9B5D6"/><circle cx="45" cy="70" r="9" fill="#B9B5D6"/><circle cx="25" cy="50" r="9" fill="#B9B5D6"/><circle cx="55" cy="25" r="9" fill="#B9B5D6"/><path d="M72 45h24" stroke="#211A52" stroke-width="5" marker-end="url(#arr)"/><use href="#person" x="106" y="22" width="30" height="42" fill="#211A52"/></svg>
-      <p style="font-size:36px;font-weight:700;margin-top:24px">Small facts add up</p>
-      <p class="small" style="margin-top:12px">Harmless data points, combined, show health, beliefs, relationships and routines. “Give me six lines by the most honest man, and I’ll find enough to hang him.” (Richelieu)</p>
-    </div>
-    <div class="top-line">
-      <svg width="140" height="90" viewBox="0 0 140 90" aria-label="A window with blinds"><rect x="40" y="6" width="60" height="78" fill="none" stroke="#211A52" stroke-width="5"/><path d="M40 28h60M40 48h60M40 68h60" stroke="#211A52" stroke-width="5"/></svg>
-      <p style="font-size:36px;font-weight:700;margin-top:24px">Privacy is not secrecy</p>
-      <p class="small" style="margin-top:12px">We have blinds on our windows and a door on the bathroom without being criminals. “No different than saying you don’t care about free speech because you have nothing to say.” (Snowden)</p>
-    </div>
-    <div class="top-line">
-      <svg width="140" height="90" viewBox="0 0 140 90" aria-label="A clock"><circle cx="45" cy="45" r="38" fill="none" stroke="#211A52" stroke-width="5"/><path d="M45 22v24l16 10" stroke="#211A52" stroke-width="5" fill="none" stroke-linecap="round"/></svg>
-      <p style="font-size:36px;font-weight:700;margin-top:24px">Rules change</p>
-      <p class="small" style="margin-top:12px">What is harmless today can become a problem under a future government or in another country.</p>
-    </div>
-  </div>
-  <p class="src">Solove, D. J. (2007). “I’ve Got Nothing to Hide” and Other Misunderstandings of Privacy. San Diego Law Review, 44, 745. Schneier, B. (2006). The Eternal Value of Privacy. Snowden: Reddit AMA (2015).</p>
-  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">8</p>
-</section>
-
-<!-- 9 CHILLING EFFECT -->
-<section class="slide">
-  <p class="label">Why privacy matters</p>
-  <h2>People change their behaviour when they feel watched</h2>
-  <div class="rule"></div>
-  <div style="display:flex;gap:80px;align-items:start">
-    <svg id="penney" width="1100" height="520" viewBox="0 0 1100 520" aria-label="Line chart: monthly views of 48 terrorism-related Wikipedia articles fall by about 20 percent after the Snowden revelations in June 2013"></svg>
-    <div style="flex:1">
-      <p class="big">−20%</p>
-      <p class="lead" style="margin-top:20px">monthly views of 48 Wikipedia articles on terrorism-related topics after the Snowden revelations in June 2013.</p>
-      <p class="lead" style="margin-top:24px">Views kept falling in the following months. Researchers call this a <b>chilling effect</b>.</p>
-    </div>
-  </div>
-  <p class="src">Penney, J. (2016). Chilling Effects: Online Surveillance and Wikipedia Use. Berkeley Technology Law Journal, 31, 117. Chart simplified.</p>
-  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">9</p>
-</section>
-<script>
-(function () {
-  const T = window.T;
-  // simplified Penney chart
-    const before = [2.9,3.0,2.95,3.05,3.0,2.9,3.1,3.0,2.95,3.05,3.1,3.0,2.95,3.05,3.0,3.1,3.0];
-    const after = [2.3,2.25,2.2,2.25,2.15,2.2,2.1,2.15,2.05,2.1,2.0,2.05,1.95,2.0,1.95];
-    const X = i => 90 + i * 32.5, Y = v => 440 - v * 120;
-    let p = '';
-    [1, 2, 3].forEach(v => { p += T('line', { x1: 90, y1: Y(v), x2: 1090, y2: Y(v), stroke: '#EEEEF5', 'stroke-width': 2 }); p += T('text', { x: 72, y: Y(v) + 9, 'text-anchor': 'end', 'font-size': 26, fill: '#6B6B7E' }, v + 'M'); });
-    p += T('line', { x1: 90, y1: 440, x2: 1090, y2: 440, stroke: '#211A52', 'stroke-width': 3 });
-    p += T('line', { x1: X(16.5), y1: 60, x2: X(16.5), y2: 440, stroke: '#6B6B7E', 'stroke-width': 3, 'stroke-dasharray': '8 8' });
-    p += T('text', { x: X(16.5) + 14, y: 80, 'font-size': 26, fill: '#6B6B7E' }, 'June 2013: Snowden revelations');
-    p += T('polyline', { points: before.map((v, i) => `${X(i)},${Y(v)}`).join(' '), fill: 'none', stroke: '#211A52', 'stroke-width': 6 });
-    p += T('polyline', { points: after.map((v, i) => `${X(i + 17)},${Y(v)}`).join(' '), fill: 'none', stroke: '#211A52', 'stroke-width': 6 });
-    p += T('text', { x: X(0), y: 488, 'font-size': 26, fill: '#2B2B3A' }, '2012') + T('text', { x: X(12), y: 488, 'font-size': 26, fill: '#2B2B3A' }, '2013') + T('text', { x: X(24), y: 488, 'font-size': 26, fill: '#2B2B3A' }, '2014');
-    p += T('text', { x: 90, y: 24, 'font-size': 26, 'font-weight': 700, fill: '#211A52' }, 'Monthly views of the 48 articles');
-    document.getElementById('penney').innerHTML = p;
-})();
-</script>
-
-<!-- 10 BACKDOORS -->
-<section class="slide">
-  <p class="label">Why privacy matters</p>
-  <h2>Access built for the police can be used by others</h2>
-  <div class="rule"></div>
-  <div style="display:flex;gap:96px">
-    <div style="flex:1" class="top-line">
-      <p style="font-size:30px;font-weight:500" class="muted">Greece, 2004–05</p>
-      <p style="font-size:44px;font-weight:700;margin-top:12px">The Athens Affair</p>
-      <p class="small" style="margin-top:16px">Unknown attackers used the legal wiretap function in Vodafone Greece’s network to listen to about <b>100 phones</b>, including the Prime Minister’s.</p>
-      <svg width="700" height="120" viewBox="0 0 700 120" style="margin-top:28px" aria-label="About one hundred phones, one highlighted">
-        <g id="phones100"></g>
-      </svg>
-    </div>
-    <div style="flex:1" class="top-line">
-      <p style="font-size:30px;font-weight:500" class="muted">USA and worldwide, 2024–25</p>
-      <p style="font-size:44px;font-weight:700;margin-top:12px">Salt Typhoon</p>
-      <p class="small" style="margin-top:16px">Chinese state hackers got into US telecom networks, including systems used for court-ordered wiretaps. In 2025, 13 countries reported <b>200+ US organisations</b> affected.</p>
-      <p class="small" style="margin-top:16px">In Dec 2024 the FBI and CISA advised Americans to use <b>encrypted messengers</b>.</p>
-    </div>
-  </div>
-  <p class="lead" style="position:absolute;left:128px;bottom:176px;width:1664px">Security researchers conclude that a way in that works only for authorities cannot be built (Abelson et al., 2015).</p>
-  <p class="src" style="bottom:132px">Prevelakis &amp; Spinellis (2007), IEEE Spectrum; joint advisory of 13 countries (27 Aug 2025); Abelson et al. (2015), Keys under doormats</p>
-  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">10</p>
-</section>
-<script>
-(function () {
-  const T = window.T;
-  // ~100 phones (Athens Affair), first one = Prime Minister
-    let ph = '';
-    for (let i = 0; i < 100; i++) { const r = Math.floor(i / 25), c = i % 25; ph += T('rect', { x: c * 28, y: r * 30, width: 16, height: 24, rx: 3, fill: i === 0 ? '#FFF200' : '#211A52', stroke: '#211A52', 'stroke-width': 2 }); }
-    document.getElementById('phones100').innerHTML = ph;
-})();
-</script>
-
-<!-- 11 FUNCTION CREEP -->
-<section class="slide">
-  <p class="label">Why privacy matters</p>
-  <h2>Surveillance tools spread beyond their original purpose</h2>
-  <div class="rule"></div>
-  <svg width="1664" height="260" viewBox="0 0 1664 260" aria-label="Arrow from official targets of spyware to journalists, activists and politicians">
-    <path d="M40 130h1580" stroke="#211A52" stroke-width="6" marker-end="url(#arr)"/>
-    <g font-size="30" fill="#2B2B3A" text-anchor="middle">
-      <circle cx="200" cy="130" r="20" fill="#211A52"/><text x="200" y="80" font-weight="700" fill="#211A52">Terrorists</text><text x="200" y="195" fill="#6B6B7E">official purpose</text>
-      <circle cx="600" cy="130" r="20" fill="#211A52"/><text x="600" y="80" font-weight="700" fill="#211A52">Serious crime</text><text x="600" y="195" fill="#6B6B7E">official purpose</text>
-      <circle cx="1000" cy="130" r="20" fill="#FFF200" stroke="#211A52" stroke-width="4"/><text x="1000" y="80" font-weight="700" fill="#211A52">Journalists</text><text x="1000" y="195" fill="#6B6B7E">found among targets</text>
-      <circle cx="1400" cy="130" r="20" fill="#FFF200" stroke="#211A52" stroke-width="4"/><text x="1400" y="80" font-weight="700" fill="#211A52">Activists, politicians</text><text x="1400" y="195" fill="#6B6B7E">found among targets</text>
-    </g>
-  </svg>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:20px">
-    <div class="top-line"><p class="big" style="font-size:72px">50,000</p><p class="small" style="margin-top:12px">phone numbers on a leaked list of possible <b>Pegasus</b> spyware targets (2021)</p></div>
-    <div class="top-line"><p class="big" style="font-size:72px">2025</p><p class="small" style="margin-top:12px">German Constitutional Court bans state trojans for <b>minor offences</b></p></div>
-  </div>
-  <p class="src">Pegasus Project (Forbidden Stories / Amnesty, 2021); BVerfG 1 BvR 180/23 (2025)</p>
-  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">11</p>
-</section>
-
-<!-- 12 SECTION: state -->
-<section class="slide sec">
-  <img class="wave" src="img/wave_white_16x9.png" alt="">
-  <p class="num">Part 3</p>
-  <h1>Why the state wants access</h1>
-  <p class="sub">Arguments for more surveillance</p>
-  <img class="wlogo" src="img/CPH_LEFT_WHITE.png" alt="AAU Copenhagen">
-</section>
-
-<!-- 13 ENCRYPTION HIDES CRIME -->
-<section class="slide">
-  <p class="label">Why the state wants access</p>
-  <h2>Encryption also hides serious crime</h2>
-  <div class="rule"></div>
-  <div style="display:flex;gap:96px;align-items:end">
-    <svg width="900" height="560" viewBox="0 0 900 560" aria-label="Bar chart: reports of child abuse material to NCMEC fell from 36.2 million in 2023 to 20.5 million in 2024 and 21.3 million in 2025">
-      <line x1="40" y1="500" x2="880" y2="500" stroke="#211A52" stroke-width="4"/>
-      <rect x="90" y="100" width="200" height="400" fill="#211A52"/>
-      <rect x="360" y="274" width="200" height="226" fill="#B9B5D6"/>
-      <rect x="630" y="265" width="200" height="235" fill="#B9B5D6"/>
-      <g text-anchor="middle">
-        <text x="190" y="80" font-size="48" font-weight="700" fill="#211A52">36.2M</text>
-        <text x="460" y="254" font-size="48" font-weight="700" fill="#211A52">20.5M</text>
-        <text x="730" y="245" font-size="48" font-weight="700" fill="#211A52">21.3M</text>
-        <text x="190" y="544" font-size="32" font-weight="600" fill="#2B2B3A">2023</text>
-        <text x="460" y="544" font-size="32" font-weight="600" fill="#2B2B3A">2024</text>
-        <text x="730" y="544" font-size="32" font-weight="600" fill="#2B2B3A">2025</text>
-      </g>
-    </svg>
-    <div style="flex:1;padding-bottom:40px">
-      <p class="big" style="font-size:120px">−43%</p>
-      <p class="lead" style="margin-top:24px">fewer reports of child abuse material due to:</p>
-      <ul class="lead" style="margin:12px 0 0 40px">
-        <li>bundling</li>
-        <li>Messenger's end-to-end encryption</li>
-      </ul>
-      <p class="small" style="margin-top:32px;color:var(--grey)">The REPORT Act (2024) was meant to increase reporting: platforms must now also report child trafficking and online enticement.</p>
-    </div>
-  </div>
-  <p class="src">Reports to NCMEC, the US hotline most platforms report to (CyberTipline data 2023–2025; NBC News, 2025)</p>
-  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">13</p>
-</section>
-
-<!-- 14 TARGETED OPERATIONS -->
-<section class="slide">
-  <p class="label">Why the state wants access</p>
-  <h2>Targeted operations against encrypted networks</h2>
-  <p class="lead muted" style="margin-top:12px">Police hacked or secretly ran encrypted phone services used mainly by criminals</p>
-  <div class="rule"></div>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:64px">
-    <div class="top-line"><p style="font-size:30px;font-weight:500" class="muted">EncroChat, 2020</p><p class="big" style="margin-top:16px">6,558</p><p class="small" style="margin-top:12px">arrests across Europe, about €900M seized. Around 60,000 users.</p></div>
-    <div class="top-line"><p style="font-size:30px;font-weight:500" class="muted">ANOM, 2021</p><p class="big" style="margin-top:16px">800+</p><p class="small" style="margin-top:12px">arrests in 16 countries. The FBI secretly ran the app on 12,000 devices.</p></div>
-    <div class="top-line"><p style="font-size:30px;font-weight:500" class="muted">Sky ECC, 2021</p><p class="big" style="margin-top:16px">585</p><p class="small" style="margin-top:12px">arrest warrants in Germany alone (until 2025). About 70,000 users monitored.</p></div>
-  </div>
-  <p class="lead" style="position:absolute;left:128px;bottom:176px;width:1664px">Investigators reached encrypted communication without scanning everyone, but against organised crime, not child abuse. Courts still debate how such evidence may be used (CJEU, C-670/22, 2024).</p>
-  <p class="src" style="bottom:132px">Europol / Eurojust (2023); FBI &amp; Australian Federal Police (2021); BKA (2025)</p>
   <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">14</p>
 </section>
 
-<!-- 15 SECTION: case -->
-<section class="slide sec">
-  <img class="wave" src="img/wave_white_16x9.png" alt="">
-  <p class="num">Part 4</p>
-  <h1>Case study: Chat Control</h1>
-  <p class="sub">The EU plan to scan private chats for child abuse material</p>
-  <img class="wlogo" src="img/CPH_LEFT_WHITE.png" alt="AAU Copenhagen">
-</section>
-
-<!-- 16 1.0 vs 2.0 -->
+<!-- 15 1.0 vs 2.0 -->
 <section class="slide">
   <p class="label">Case study</p>
   <h2>Chat Control 1.0 and 2.0</h2>
@@ -460,10 +417,10 @@ svg { font-family: "Barlow", Arial, sans-serif; display: block; }
     </div>
     </div>
   </div>
-  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">16</p>
+  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">15</p>
 </section>
 
-<!-- 17 CLIENT-SIDE SCANNING -->
+<!-- 16 CLIENT-SIDE SCANNING -->
 <section class="slide">
   <p class="label">Case study</p>
   <h2>Client-side scanning</h2>
@@ -497,10 +454,10 @@ svg { font-family: "Barlow", Arial, sans-serif; display: block; }
     </div>
   </div>
   <p class="src" style="bottom:132px">Abelson et al. (2024), Bugs in our pockets</p>
-  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">17</p>
+  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">16</p>
 </section>
 
-<!-- 18 TIMELINE + STATUS -->
+<!-- 17 TIMELINE + STATUS -->
 <section class="slide">
   <p class="label">Case study</p>
   <h2>Four years of negotiations, no agreement yet</h2>
@@ -531,10 +488,10 @@ svg { font-family: "Barlow", Arial, sans-serif; display: block; }
     <div style="flex:1" class="top-line"><p style="font-size:32px;font-weight:700">Still open</p><p class="small" style="margin-top:10px">Scanning orders for private chats, encrypted services, age verification.</p></div>
   </div>
   <p class="src">EP negotiating team (29 Jun 2026); Council doc. 11956/26 (10 Sep 2026); netzpolitik.org (2 Oct 2026). Status: 27 Oct 2026.</p>
-  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">18</p>
+  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">17</p>
 </section>
 
-<!-- 19 WHO STANDS WHERE -->
+<!-- 18 WHO STANDS WHERE -->
 <section class="slide">
   <p class="label">Case study</p>
   <h2>Who stands where</h2>
@@ -563,55 +520,53 @@ svg { font-family: "Barlow", Arial, sans-serif; display: block; }
       <text x="1644" y="420" text-anchor="end" fill="#6B6B7E">~500 researchers;</text><text x="1644" y="452" text-anchor="end" fill="#6B6B7E">Signal would leave the EU</text>
     </g>
   </svg>
-  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">19</p>
+  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">18</p>
 </section>
 
-<!-- 20 FALSE ALARMS -->
+<!-- 19 FALSE ALARMS -->
 <section class="slide">
   <p class="label">Case study</p>
   <h2>Many alarms concern legal content</h2>
   <div class="rule"></div>
   <p style="font-size:32px;font-weight:700;margin-top:-8px">Share of reports to police that did not lead to a case</p>
   <svg width="1664" height="530" viewBox="0 0 1664 530" style="margin-top:8px" aria-label="Bar chart of the share of reports to police that did not lead to a case, in Ireland, Germany, Norway, Switzerland and Czechia"><line x1="0" y1="380.0" x2="1664" y2="380.0" stroke="#211A52" stroke-width="4"/><line x1="0" y1="210.0" x2="1664" y2="210.0" stroke="#D9D6EA" stroke-width="2"/><text x="0" y="200.0" font-size="24" fill="#6B6B7E">50%</text><line x1="0" y1="40.0" x2="1664" y2="40.0" stroke="#D9D6EA" stroke-width="2"/><text x="0" y="30.0" font-size="24" fill="#6B6B7E">100%</text><rect x="66.4" y="342.6" width="200" height="37.4" rx="8" fill="#211A52"/><text x="166.4" y="426" text-anchor="middle" font-size="32" font-weight="700" fill="#211A52">Ireland · 2020</text><text x="166.4" y="462" text-anchor="middle" font-size="24" fill="#6B6B7E">not abuse material</text><rect x="399.20000000000005" y="210.0" width="200" height="170.0" rx="8" fill="#211A52"/><text x="499.20000000000005" y="426" text-anchor="middle" font-size="32" font-weight="700" fill="#211A52">Germany · 2023</text><text x="499.20000000000005" y="462" text-anchor="middle" font-size="24" fill="#6B6B7E">not a crime</text><rect x="732.0" y="155.6" width="200" height="224.4" rx="8" fill="#211A52"/><text x="832.0" y="426" text-anchor="middle" font-size="32" font-weight="700" fill="#211A52">Norway · 2023</text><text x="832.0" y="462" text-anchor="middle" font-size="24" fill="#6B6B7E">rejected, mostly not a</text><text x="832.0" y="492" text-anchor="middle" font-size="24" fill="#6B6B7E">crime in Norway</text><rect x="1064.8000000000002" y="74.0" width="200" height="306.0" rx="8" fill="#211A52"/><text x="1164.8000000000002" y="426" text-anchor="middle" font-size="32" font-weight="700" fill="#211A52">Switzerland · 2019</text><text x="1164.8000000000002" y="462" text-anchor="middle" font-size="24" fill="#6B6B7E">not a crime</text><rect x="1397.6000000000001" y="53.60000000000002" width="200" height="326.4" rx="8" fill="#B9B5D6"/><text x="1497.6000000000001" y="426" text-anchor="middle" font-size="32" font-weight="700" fill="#211A52">Czechia · 2024</text><text x="1497.6000000000001" y="462" text-anchor="middle" font-size="24" fill="#6B6B7E">not passed on for</text><text x="1497.6000000000001" y="492" text-anchor="middle" font-size="24" fill="#6B6B7E">investigation</text></svg>
-  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">20</p>
+  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">19</p>
 </section>
 
-<!-- 21 SECTION: framework -->
+<!-- 20 SECTION: framework -->
 <section class="slide sec">
   <img class="wave" src="img/wave_white_16x9.png" alt="">
   <p class="num">Part 5</p>
-  <h1>Weighing the dilemma</h1>
-  <p class="sub">One framework from the course</p>
+  <h1>Is Chat Control ethical?</h1>
   <img class="wlogo" src="img/CPH_LEFT_WHITE.png" alt="AAU Copenhagen">
 </section>
 
-<!-- 22 FRAMEWORK -->
+<!-- 21 FRAMEWORK -->
 <section class="slide">
   <p class="label">Framework</p>
   <h2>Principlist framework for cybersecurity ethics</h2>
-  <p class="lead muted" style="margin-top:16px;font-size:30px">Five principles for “cybersecurity technologies”. They can conflict and are balanced in context.</p>
-  <div class="rule" style="margin-bottom:12px"></div>
+  <div style="height:50px"></div>
   <div style="display:flex;flex-direction:column">
-    <div style="display:grid;grid-template-columns:84px 330px 1fr;column-gap:36px;align-items:center;padding:16px 0;border-top:2px solid var(--line)"><svg width="84" height="84" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="none" stroke="#211A52" stroke-width="5"/><path d="M60 88s-30-17-30-38a16 16 0 0 1 30-8 16 16 0 0 1 30 8c0 21-30 38-30 38z" fill="#211A52"/></svg>
+    <div style="display:grid;grid-template-columns:84px 330px 1fr;column-gap:36px;align-items:center;padding:25px 0;border-top:2px solid var(--line)"><svg width="84" height="84" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="none" stroke="#211A52" stroke-width="5"/><path d="M60 88s-30-17-30-38a16 16 0 0 1 30-8 16 16 0 0 1 30 8c0 21-30 38-30 38z" fill="#211A52"/></svg>
       <p style="font-size:38px;font-weight:700">Beneficence</p>
-      <p class="small" style="font-size:27px;line-height:1.3">… should be used to benefit humans, promote human well-being, and make our lives better overall.</p></div>
-    <div style="display:grid;grid-template-columns:84px 330px 1fr;column-gap:36px;align-items:center;padding:16px 0;border-top:2px solid var(--line)"><svg width="84" height="84" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="none" stroke="#211A52" stroke-width="5"/><path d="M60 26l34 12v22c0 20-15 32-34 38-19-6-34-18-34-38V38z" fill="#211A52"/></svg>
+      <p class="small" style="font-size:27px;line-height:1.3">Does it benefit humans, promote human well-being, and make our lives better overall?</p></div>
+    <div style="display:grid;grid-template-columns:84px 330px 1fr;column-gap:36px;align-items:center;padding:25px 0;border-top:2px solid var(--line)"><svg width="84" height="84" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="none" stroke="#211A52" stroke-width="5"/><path d="M60 26l34 12v22c0 20-15 32-34 38-19-6-34-18-34-38V38z" fill="#211A52"/></svg>
       <p style="font-size:38px;font-weight:700">Non-maleficence</p>
-      <p class="small" style="font-size:27px;line-height:1.3">… should not be used to intentionally harm humans or to make our lives worse overall.</p></div>
-    <div style="display:grid;grid-template-columns:84px 330px 1fr;column-gap:36px;align-items:center;padding:16px 0;border-top:2px solid var(--line)"><svg width="84" height="84" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="none" stroke="#211A52" stroke-width="5"/><circle cx="60" cy="42" r="12" fill="#211A52"/><path d="M36 92c0-18 10-30 24-30s24 12 24 30z" fill="#211A52"/></svg>
+      <p class="small" style="font-size:27px;line-height:1.3">Does it intentionally harm humans or make our lives worse overall?</p></div>
+    <div style="display:grid;grid-template-columns:84px 330px 1fr;column-gap:36px;align-items:center;padding:25px 0;border-top:2px solid var(--line)"><svg width="84" height="84" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="none" stroke="#211A52" stroke-width="5"/><circle cx="60" cy="42" r="12" fill="#211A52"/><path d="M36 92c0-18 10-30 24-30s24 12 24 30z" fill="#211A52"/></svg>
       <p style="font-size:38px;font-weight:700">Autonomy</p>
-      <p class="small" style="font-size:27px;line-height:1.3">… should be used in ways that respect human autonomy. Humans should be able to make informed decisions for themselves about how that technology is used in their lives.</p></div>
-    <div style="display:grid;grid-template-columns:84px 330px 1fr;column-gap:36px;align-items:center;padding:16px 0;border-top:2px solid var(--line)"><svg width="84" height="84" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="none" stroke="#211A52" stroke-width="5"/><path d="M60 28v62M34 40h52M34 40l-12 26h24zM86 40l-12 26h24zM44 90h32" stroke="#211A52" stroke-width="5" fill="none" stroke-linejoin="round"/></svg>
+      <p class="small" style="font-size:27px;line-height:1.3">Does it respect human autonomy? Can humans make informed decisions for themselves about how that technology is used in their lives?</p></div>
+    <div style="display:grid;grid-template-columns:84px 330px 1fr;column-gap:36px;align-items:center;padding:25px 0;border-top:2px solid var(--line)"><svg width="84" height="84" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="none" stroke="#211A52" stroke-width="5"/><path d="M60 28v62M34 40h52M34 40l-12 26h24zM86 40l-12 26h24zM44 90h32" stroke="#211A52" stroke-width="5" fill="none" stroke-linejoin="round"/></svg>
       <p style="font-size:38px;font-weight:700">Justice</p>
-      <p class="small" style="font-size:27px;line-height:1.3">… should be used to promote fairness, equality, and impartiality. It should not be used to unfairly discriminate, undermine solidarity, or prevent equal access.</p></div>
-    <div style="display:grid;grid-template-columns:84px 330px 1fr;column-gap:36px;align-items:center;padding:16px 0;border-top:2px solid var(--line)"><svg width="84" height="84" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="none" stroke="#211A52" stroke-width="5"/><path d="M22 60s14-24 38-24 38 24 38 24-14 24-38 24-38-24-38-24z" fill="none" stroke="#211A52" stroke-width="5"/><circle cx="60" cy="60" r="11" fill="#211A52"/></svg>
+      <p class="small" style="font-size:27px;line-height:1.3">Does it promote fairness, equality, and impartiality? Does it unfairly discriminate, undermine solidarity, or prevent equal access?</p></div>
+    <div style="display:grid;grid-template-columns:84px 330px 1fr;column-gap:36px;align-items:center;padding:25px 0;border-top:2px solid var(--line)"><svg width="84" height="84" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="none" stroke="#211A52" stroke-width="5"/><path d="M22 60s14-24 38-24 38 24 38 24-14 24-38 24-38-24-38-24z" fill="none" stroke="#211A52" stroke-width="5"/><circle cx="60" cy="60" r="11" fill="#211A52"/></svg>
       <p style="font-size:38px;font-weight:700">Explicability</p>
-      <p class="small" style="font-size:27px;line-height:1.3">… should be used in ways that are intelligible, transparent, and comprehensible, and it should also be clear who is accountable and responsible for its use.</p></div>
+      <p class="small" style="font-size:27px;line-height:1.3">Is it intelligible, transparent, and comprehensible? Is it clear who is accountable and responsible for its use?</p></div>
   </div>
-  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">22</p>
+  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">21</p>
 </section>
 
-<!-- 23 ASSESSMENT -->
+<!-- 22 ASSESSMENT -->
 <section class="slide">
   <p class="label">Framework</p>
   <h2>Chat Control 2.0 through the five principles</h2>
@@ -620,48 +575,46 @@ svg { font-family: "Barlow", Arial, sans-serif; display: block; }
     <p></p><p style="font-size:28px;font-weight:700;padding-bottom:12px">What speaks for it</p><p style="font-size:28px;font-weight:700;padding-bottom:12px">What speaks against it</p><p style="font-size:28px;font-weight:700;padding-bottom:12px">Our verdict</p>
     <p style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:30px;font-weight:700">Beneficence<span style="display:block;font-size:20px;font-weight:400;line-height:1.2;color:var(--grey);margin-top:2px">Benefit humans, promote human well-being</span></p>
     <p class="small" style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:25px;line-height:1.3">Could find abuse material and offenders in encrypted chats, where reports have fallen</p>
-    <p class="small" style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:25px;line-height:1.3">Benefit is unproven: more reports do not show more children protected. Targeted operations catch offenders in other crime areas</p>
-    <p style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:25px;font-weight:700"><span>Open</span></p>
+    <p class="small" style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:25px;line-height:1.3">Benefit is unproven: more reports do not show more children protected, and offenders can switch channels</p>
+    <p style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:22px;font-weight:600;color:var(--grey)"><span>Open</span></p>
     <p style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:30px;font-weight:700">Non-maleficence<span style="display:block;font-size:20px;font-weight:400;line-height:1.2;color:var(--grey);margin-top:2px">No intentional harm, lives not worse overall</span></p>
     <p class="small" style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:25px;line-height:1.3">Stopping the spread of abuse images could prevent further harm to victims</p>
-    <p class="small" style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:25px;line-height:1.3">Many false alarms (about half of German reports in 2023 not criminal). Possible: a new attack surface on every phone, lists widened later</p>
-    <p style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:25px;font-weight:700"><span class="mark">Not met</span></p>
+    <p class="small" style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:25px;line-height:1.3">Not the aim, but foreseeable: are lives worse overall? Possible harm: weaker security for all, wrongly flagged users, fewer confidential spaces, later misuse</p>
+    <p style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:22px;font-weight:600;color:var(--grey)"><span>Open</span></p>
     <p style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:30px;font-weight:700">Autonomy<span style="display:block;font-size:20px;font-weight:400;line-height:1.2;color:var(--grey);margin-top:2px">Informed decisions about how technology is used</span></p>
     <p class="small" style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:25px;line-height:1.3">Victims’ privacy: images of their abuse spread without their consent</p>
-    <p class="small" style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:25px;line-height:1.3">No real choice: messages are scanned before end-to-end encryption can protect them; refusing means not communicating</p>
-    <p style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:25px;font-weight:700"><span class="mark">Not met</span></p>
+    <p class="small" style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:25px;line-height:1.3">Privacy invaded without a real choice: messages are scanned before end-to-end encryption can protect them</p>
+    <p style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:22px;font-weight:600;color:var(--grey)"><span>Not met</span></p>
     <p style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:30px;font-weight:700">Justice<span style="display:block;font-size:20px;font-weight:400;line-height:1.2;color:var(--grey);margin-top:2px">Fairness, equality, impartiality, equal access</span></p>
     <p class="small" style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:25px;line-height:1.3">Solidarity with victims, and the same rules apply to all users</p>
     <p class="small" style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:25px;line-height:1.3">Everyone is treated as a suspect without cause, and carries the burden for a few offenders</p>
-    <p style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:25px;font-weight:700"><span class="mark">Not met</span></p>
+    <p style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:22px;font-weight:600;color:var(--grey)"><span>Not met</span></p>
     <p style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:30px;font-weight:700">Explicability<span style="display:block;font-size:20px;font-weight:400;line-height:1.2;color:var(--grey);margin-top:2px">Intelligible, transparent, clear who is accountable</span></p>
     <p class="small" style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:25px;line-height:1.3">One central EU Centre receives all reports, so there is a defined point of accountability</p>
     <p class="small" style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:25px;line-height:1.3">Lists and AI cannot be checked and are secret; responsibility is split between providers, EU Centre and police</p>
-    <p style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:25px;font-weight:700"><span class="mark">Not met</span></p>
+    <p style="padding:10px 0 11px;border-top:2px solid var(--line);font-size:22px;font-weight:600;color:var(--grey)"><span>Not met</span></p>
   </div>
-  <p class="src" style="bottom:136px">Benefit unclear, false alarms documented, milder means untested for child abuse. Our group’s judgement. Hash matching and AI have different error rates.</p>
-  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">23</p>
+  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">22</p>
 </section>
 
-<!-- 24 GRIDS -->
+<!-- 23 GRIDS -->
 <section class="slide">
   <p class="label">Framework</p>
   <h2>Check everyone, or only suspects?</h2>
   <div class="rule"></div>
-  <div style="display:flex;gap:120px">
+  <div style="display:flex;gap:120px;margin-top:80px">
     <div style="flex:1">
-      <p style="font-size:36px;font-weight:700">Mass scanning</p>
-      <p class="lead muted">everyone is checked, all the time</p>
+      <p style="font-size:36px;font-weight:700">Scan everyone</p>
+      <p class="lead muted">European Commission: all chats, also encrypted</p>
       <svg id="gridA" width="720" height="340" viewBox="0 0 720 340" style="margin-top:28px" aria-label="Forty people, all checked"></svg>
     </div>
     <div style="flex:1">
-      <p style="font-size:36px;font-weight:700">Targeted</p>
-      <p class="lead muted">only suspects, with a judge’s order</p>
+      <p style="font-size:36px;font-weight:700">Only suspects</p>
+      <p class="lead muted">European Parliament: with a judge’s order</p>
       <svg id="gridB" width="720" height="340" viewBox="0 0 720 340" style="margin-top:28px" aria-label="Forty people, only three are checked"></svg>
     </div>
   </div>
-  <p class="lead" style="position:absolute;left:128px;bottom:150px;width:1664px">The European Parliament supports the targeted model, while most member states want wider options. The negotiations have not settled this yet.</p>
-  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">24</p>
+  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">23</p>
 </section>
 <script>
 (function () {
@@ -680,18 +633,47 @@ svg { font-family: "Barlow", Arial, sans-serif; display: block; }
 })();
 </script>
 
+<!-- 24 ALTERNATIVE -->
+<section class="slide">
+  <p class="label">Framework</p>
+  <h2>The alternative</h2>
+  <p class="lead muted" style="margin-top:12px;font-size:30px">Compared with Chat Control 2.0</p>
+  <div class="rule" style="margin-bottom:12px"></div>
+  <div style="display:flex;flex-direction:column">
+    <div style="display:grid;grid-template-columns:72px 360px 1fr;column-gap:32px;align-items:center;padding:20px 0;border-top:2px solid var(--line)"><svg width="72" height="72" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="none" stroke="#211A52" stroke-width="5"/><path d="M60 88s-30-17-30-38a16 16 0 0 1 30-8 16 16 0 0 1 30 8c0 21-30 38-30 38z" fill="#211A52"/></svg>
+      <p style="font-size:38px;font-weight:700">Beneficence</p>
+      <p class="small" style="font-size:30px;line-height:1.3">Finds known suspects, but only those.</p></div>
+    <div style="display:grid;grid-template-columns:72px 360px 1fr;column-gap:32px;align-items:center;padding:20px 0;border-top:2px solid var(--line)"><svg width="72" height="72" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="none" stroke="#211A52" stroke-width="5"/><path d="M60 26l34 12v22c0 20-15 32-34 38-19-6-34-18-34-38V38z" fill="#211A52"/></svg>
+      <p style="font-size:38px;font-weight:700">Non-maleficence</p>
+      <p class="small" style="font-size:30px;line-height:1.3">Far fewer people are affected, but spyware has its own risks.</p></div>
+    <div style="display:grid;grid-template-columns:72px 360px 1fr;column-gap:32px;align-items:center;padding:20px 0;border-top:2px solid var(--line)"><svg width="72" height="72" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="none" stroke="#211A52" stroke-width="5"/><circle cx="60" cy="42" r="12" fill="#211A52"/><path d="M36 92c0-18 10-30 24-30s24 12 24 30z" fill="#211A52"/></svg>
+      <p style="font-size:38px;font-weight:700">Autonomy</p>
+      <p class="small" style="font-size:30px;line-height:1.3">Only suspects are affected, and a judge decides.</p></div>
+    <div style="display:grid;grid-template-columns:72px 360px 1fr;column-gap:32px;align-items:center;padding:20px 0;border-top:2px solid var(--line)"><svg width="72" height="72" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="none" stroke="#211A52" stroke-width="5"/><path d="M60 28v62M34 40h52M34 40l-12 26h24zM86 40l-12 26h24zM44 90h32" stroke="#211A52" stroke-width="5" fill="none" stroke-linejoin="round"/></svg>
+      <p style="font-size:38px;font-weight:700">Justice</p>
+      <p class="small" style="font-size:30px;line-height:1.3">The burden falls on people with a concrete suspicion.</p></div>
+    <div style="display:grid;grid-template-columns:72px 360px 1fr;column-gap:32px;align-items:center;padding:20px 0;border-top:2px solid var(--line)"><svg width="72" height="72" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="none" stroke="#211A52" stroke-width="5"/><path d="M22 60s14-24 38-24 38 24 38 24-14 24-38 24-38-24-38-24z" fill="none" stroke="#211A52" stroke-width="5"/><circle cx="60" cy="60" r="11" fill="#211A52"/></svg>
+      <p style="font-size:38px;font-weight:700">Explicability</p>
+      <p class="small" style="font-size:30px;line-height:1.3">A judge’s order is documented and can be challenged.</p></div>
+  </div>
+  <p class="src" style="bottom:136px">Our evidence for targeted work (EncroChat, ANOM, Sky ECC) concerns organised crime, not child abuse.</p>
+  <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">24</p>
+</section>
+
 <!-- 25 CONCLUSION -->
 <section class="slide">
   <p class="label">Conclusion</p>
   <h2>What we conclude</h2>
   <div class="rule"></div>
-  <div style="display:flex;flex-direction:column;gap:34px;width:1580px">
-    <div style="display:flex;gap:40px"><p style="font-size:64px;font-weight:700;line-height:1;width:70px;flex:none">1</p><p class="lead" style="font-size:36px"><b>The conflict is old.</b> From the Clipper Chip to Chat Control, each new technology has raised the same question again.</p></div>
-    <div style="display:flex;gap:40px"><p style="font-size:64px;font-weight:700;line-height:1;width:70px;flex:none">2</p><p class="lead" style="font-size:36px"><b>Encryption moved it onto our devices.</b> Hacking, scanning and backdoors all reach into the phone itself.</p></div>
-    <div style="display:flex;gap:40px"><p style="font-size:64px;font-weight:700;line-height:1;width:70px;flex:none">3</p><p class="lead" style="font-size:36px"><b>Chat Control 2.0 fails the test.</b> In our assessment it fails on harm, freedom, fairness and transparency, and its benefit is unproven. Targeted measures are the alternative, and they still catch criminals.</p></div>
-    <div style="display:flex;gap:40px"><p style="font-size:64px;font-weight:700;line-height:1;width:70px;flex:none">4</p><p class="lead" style="font-size:36px"><b>Infrastructure lasts.</b> What is built for surveillance stays available to future governments and to attackers.</p></div>
+  <div style="display:flex;flex-direction:column;gap:30px;width:1580px">
+    <p style="font-size:26px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--grey);margin-bottom:-12px">The dilemma</p>
+    <div style="display:flex;gap:40px"><p style="font-size:64px;font-weight:700;line-height:1;width:70px;flex:none">1</p><p class="lead" style="font-size:36px"><b>Every option gives something up.</b> Protecting children and protecting private communication are both legitimate goals.</p></div>
+    <p style="font-size:26px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--grey);margin-bottom:-12px">Our position</p>
+    <div style="display:flex;gap:40px"><p style="font-size:64px;font-weight:700;line-height:1;width:70px;flex:none">2</p><p class="lead" style="font-size:36px"><b>Chat Control 2.0 conflicts with freedom, fairness and transparency.</b> Harm and benefit remain open.</p></div>
+    <div style="display:flex;gap:40px"><p style="font-size:64px;font-weight:700;line-height:1;width:70px;flex:none">3</p><p class="lead" style="font-size:36px"><b>The Parliament’s targeted model does better on those three,</b> but it only finds people who are already suspected.</p></div>
+    <div style="display:flex;gap:40px"><p style="font-size:64px;font-weight:700;line-height:1;width:70px;flex:none">4</p><p class="lead" style="font-size:36px"><b>Our weighing:</b> certain, widespread costs weigh more than an unproven benefit.</p></div>
   </div>
-  <p class="lead" style="position:absolute;left:128px;bottom:150px;width:1664px;font-style:italic">“The choice is not security versus privacy, but liberty versus control.” (Schneier, 2006)</p>
+  <p class="lead" style="position:absolute;left:128px;bottom:150px;width:1664px"><b>Who may read our messages?</b> Not everyone, all the time. A judge, and a concrete suspicion.</p>
   <img class="logo" src="img/CPH_LEFT_RGB.png" alt="AAU Copenhagen"><p class="page">25</p>
 </section>
 
@@ -731,7 +713,7 @@ svg { font-family: "Barlow", Arial, sans-serif; display: block; }
   <img src="img/bridge.jpg" alt="AAU Copenhagen campus by the water" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
   <div style="position:absolute;left:0;right:0;bottom:0;height:320px;background:rgba(33,26,82,.9)"></div>
   <p style="position:absolute;left:128px;bottom:150px;font-size:96px;font-weight:700;color:#fff">Thank you</p>
-  <p style="position:absolute;left:128px;bottom:96px;font-size:30px;color:var(--lav)">[Group members] · Dilemmas in Cyber Security E26</p>
+  <p style="position:absolute;left:128px;bottom:96px;font-size:30px;color:var(--lav)">Felix Mansel, Marika Wach and Julia Przeździk – Dilemmas in Cyber Security E26</p>
   <img src="img/CPH_LEFT_WHITE.png" alt="AAU Copenhagen" style="position:absolute;right:128px;bottom:110px;height:72px">
 </section>
 
